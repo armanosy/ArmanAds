@@ -34,8 +34,8 @@ dependencies {
 
     //Main Sdk Ads
     implementation 'com.google.android.gms:play-services-ads:20.6.0'
-    implementation 'com.facebook.android:audience-network-sdk:6.8.0'
-    implementation 'com.applovin:applovin-sdk:11.3.2'
+    implementation 'com.facebook.android:audience-network-sdk:6.10.0'
+    implementation 'com.applovin:applovin-sdk:11.3.3'
     implementation 'com.ironsource.sdk:mediationsdk:7.2.1'
     implementation 'com.startapp:inapp-sdk:4.9.2'
 
