@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 
-import com.aliendroid.alienads.AlienOpenAds;
-import com.aliendroid.alienads.AliendroidBanner;
-import com.aliendroid.alienads.AliendroidInitialize;
-import com.aliendroid.alienads.AliendroidNative;
+import com.arman.armads.ArmOpenAds;
+import com.arman.armads.ArmanNative;
+import com.arman.armads.ArmanBanner;
+import com.arman.armads.ArmanInitialize;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AlienOpenAds.LoadOpenAds("");
+        ArmOpenAds.LoadOpenAds("");
         RelativeLayout layAds = findViewById(R.id.layAds);
         RelativeLayout layNative = findViewById(R.id.layNative);
-        AliendroidInitialize.SelectAdsApplovinMax(this,"","");
-        AliendroidBanner.SmallBannerApplovinMax(this,layAds,"","123456789","");
-        AliendroidNative.SmallNativeAdmobRectangle(this,layNative,"","ca-app-pub-3940256099942544/2247696110","","","","","","");
+        ArmanInitialize.SelectAdsApplovinMax(this,"","");
+        ArmanBanner.SmallBannerApplovinMax(this,layAds,"","123456789","");
+        ArmanNative.SmallNativeAdmobRectangle(this,layNative,"","ca-app-pub-3940256099942544/2247696110","","","","","","");
     }
 }
